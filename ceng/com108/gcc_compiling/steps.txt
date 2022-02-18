@@ -1,0 +1,18 @@
+$ gcc -E -o intro.i intro.c
+$ ls
+intro.c	intro.i
+
+$ gcc -S intro.i
+
+$ ls
+intro.c	intro.i	intro.s
+
+$ gcc -c intro.c
+
+$ ls
+intro.c	intro.i	intro.o	intro.s
+
+$ gcc -o intro intro.o
+
+$ ls
+intro	intro.c	intro.i	intro.o	intro.s
